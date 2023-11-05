@@ -1,0 +1,11 @@
+{
+  "type": "beautifulworld:rhodium_smelting",
+  "conditions": [
+    {
+      "condition": "minecraft:match_tool",
+      "predicate": {
+        "items": [ "beautifulworld:rhodium_multitool" ]
+      }
+    }
+  ]
+}

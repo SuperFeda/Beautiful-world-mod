@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "beautifulworld:pitahaya_tree_planks",
+    "beautifulworld:pitahaya_log",
+    "beautifulworld:stripped_pitahaya_log",
+    "beautifulworld:pitahaya_wood",
+    "beautifulworld:stripped_pitahaya_wood",
+    "beautifulworld:pitahaya_tree_button",
+    "beautifulworld:pitahaya_tree_pressure_plate",
+    "beautifulworld:pitahaya_tree_slab",
+    "beautifulworld:pitahaya_tree_stairs",
+    "beautifulworld:pitahaya_tree_fence",
+    "beautifulworld:pitahaya_tree_fence_gate"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "beautifulworld:overloud_block" }
+  ],
+  "result": {
+    "item": "beautifulworld:overloud_ingot",
+    "count": 9
+  }
+}

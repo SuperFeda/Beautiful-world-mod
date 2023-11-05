@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#"
+  ],
+  "key": {
+    "#": { "item": "beautifulworld:raw_overloud_block" }
+  },
+  "result": { "item": "beautifulworld:raw_overloud" }
+}

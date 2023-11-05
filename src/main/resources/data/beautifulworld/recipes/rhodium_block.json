@@ -6,7 +6,7 @@
     "###"
   ],
   "key": {
-    "#": { "item": "beautifulworld:rhodium" }
+    "#": { "item": "beautifulworld:rhodium_ingot" }
   },
   "result": { "item": "beautifulworld:rhodium_block" }
 }

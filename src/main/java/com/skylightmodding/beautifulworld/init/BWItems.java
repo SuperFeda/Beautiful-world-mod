@@ -23,7 +23,7 @@ public class BWItems {
     /* Metal */
     /**/ public static final RegistryObject<Item> OVERLOUD_INGOT = ITEMS.register("overloud_ingot", () -> new Item(new Item.Properties()));
     /**/ public static final RegistryObject<Item> RAW_OVERLOUD = ITEMS.register("raw_overloud", () -> new Item(new Item.Properties()));
-    /**/ public static final RegistryObject<Item> RHODIUM = ITEMS.register("rhodium", () -> new Item(new Item.Properties()));
+    /**/ public static final RegistryObject<Item> RHODIUM_INGOT = ITEMS.register("rhodium_ingot", () -> new Item(new Item.Properties()));
     /**/ public static final RegistryObject<Item> CRYSTALLITE = ITEMS.register("crystallite", () -> new Item(new Item.Properties().rarity(Rarity.RARE)));
 
     /* Items */

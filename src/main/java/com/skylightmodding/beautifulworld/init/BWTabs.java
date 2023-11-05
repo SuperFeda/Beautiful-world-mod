@@ -41,7 +41,7 @@ public class BWTabs {
                 .displayItems((parameters, output) -> {
                     output.accept(BWItems.OVERLOUD_INGOT.get());
                     output.accept(BWItems.RAW_OVERLOUD.get());
-                    output.accept(BWItems.RHODIUM.get());
+                    output.accept(BWItems.RHODIUM_INGOT.get());
                     output.accept(BWItems.CRYSTALLITE.get());
                     output.accept(BWItems.BAIKAL_WATER.get());
                     output.accept(BWItems.PITAHAYA.get());

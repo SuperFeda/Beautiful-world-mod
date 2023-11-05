@@ -25,7 +25,7 @@ public class BWToolsTiers {
 
     static {
         RHODIUM = TierSortingRegistry.registerTier(
-                new ForgeTier(5, 2000, 9f, 3f, 24, BWTags.NEEDS_OVERLOUD_TOOL, () -> Ingredient.of(BWItems.RHODIUM.get())),
+                new ForgeTier(5, 2000, 9f, 3f, 24, BWTags.NEEDS_OVERLOUD_TOOL, () -> Ingredient.of(BWItems.RHODIUM_INGOT.get())),
                 new ResourceLocation(BeautifulWorld.MODID, "rhodium"), List.of(Tiers.NETHERITE), List.of()
         );
     }

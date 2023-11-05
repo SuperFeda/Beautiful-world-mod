@@ -1,0 +1,44 @@
+{
+    "item.beautifulworld.overloud_ingot": "Overloud Ingot",
+    "item.beautifulworld.raw_overloud": "Raw Overloud",
+    "item.beautifulworld.rhodium_ingot": "Rhodium Ingot",
+    "item.beautifulworld.crystallite": "Crystallite",
+    "item.beautifulworld.baikal_water": "Baikal Water",
+
+    "item.beautifulworld.overloud_sword": "Overloud Sword",
+    "item.beautifulworld.overloud_pickaxe": "Overloud Pickaxe",
+    "item.beautifulworld.overloud_axe": "Overloud Axe",
+    "item.beautifulworld.overloud_hoe": "Overloud Hoe",
+    "item.beautifulworld.overloud_shovel": "Overloud Shovel",
+    "item.beautifulworld.overloud_helmet": "Overloud Helmet",
+    "item.beautifulworld.overloud_chestplate": "Overloud Chestplate",
+    "item.beautifulworld.overloud_leggings": "Overloud Leggings",
+    "item.beautifulworld.overloud_boots": "Overloud Boots",
+    "item.beautifulworld.netherite_multitool": "Netherite Multi Tool",
+
+    "item.beautifulworld.rhodium_sword": "Rhodium Sword",
+    "item.beautifulworld.rhodium_multitool": "Rhodium Multi Tool",
+    "item.beautifulworld.pitahaya": "Pitahaya",
+
+    "item.beautifulworld.baikal_water.desc": "Only for Creative",
+
+    "block.beautifulworld.overloud_block": "Overloud Block",
+    "block.beautifulworld.raw_overloud_block": "Raw Overloud Block",
+    "block.beautifulworld.overloud_ore": "Overloud Ore",
+    "block.beautifulworld.rhodium_block": "Rhodium Block",
+    "block.beautifulworld.rhodium_ore": "Rhodium Ore",
+    "block.beautifulworld.infected_stone": "Infected Stone",
+    "block.beautifulworld.pitahaya_leaves": "Pitahaya Leaves",
+    "block.beautifulworld.fruitful_pitahaya_leaves": "Pitahaya Fetus Leaves",
+    "block.beautifulworld.pitahaya_log": "Pitahaya Log",
+    "block.beautifulworld.stripped_pitahaya_log": "Stripped Pitahaya Log",
+    "block.beautifulworld.pitahaya_wood": "Pitahaya Wood",
+    "block.beautifulworld.stripped_pitahaya_wood": "Stripped Pitahaya Wood",
+    "block.beautifulworld.pitahaya_tree_planks": "Pitahaya Planks",
+    "block.beautifulworld.pitahaya_tree_button": "Pitahaya Butotn",
+    "block.beautifulworld.pitahaya_tree_pressure_plate": "Pitahaya Pressure Plate",
+
+    "itemGroup.beautifulworld.items": "Beautiful World: Items",
+    "itemGroup.beautifulworld.blocks": "Beautiful World: Block",
+    "itemGroup.beautifulworld.equipment": "Beautiful World: Equipment"
+}

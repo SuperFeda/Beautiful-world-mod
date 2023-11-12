@@ -1,15 +1,9 @@
 # Default ignored files
 /shelf/
-/.idea/runConfigurations
-/.idea/modules
-/.idea/discord.xml
-/.idea/gradle.xml
-/.idea/jarRepositories.xml
-/.idea/misc.xml
-/.idea/modules.xml
-/.idea/vcs.xml
-/.idea/workspace.xml
 
 /.gradle
+/.idea
+/build
 /run
 /gradle
+

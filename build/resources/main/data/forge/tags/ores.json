@@ -1,0 +1,7 @@
+{
+    "replace": false,
+    "values": [
+        "#forge:ores/overloud_ore",
+        "#forge:ores/rhodium_ore"
+    ]
+}

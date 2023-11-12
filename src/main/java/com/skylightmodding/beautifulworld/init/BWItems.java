@@ -20,21 +20,25 @@ import net.minecraftforge.registries.RegistryObject;
 public class BWItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, BeautifulWorld.MODID);
 
-    /* Metal */
+    /* Ore, other */
     /**/ public static final RegistryObject<Item> OVERLOUD_INGOT = ITEMS.register("overloud_ingot", () -> new Item(new Item.Properties()));
     /**/ public static final RegistryObject<Item> RAW_OVERLOUD = ITEMS.register("raw_overloud", () -> new Item(new Item.Properties()));
     /**/ public static final RegistryObject<Item> RHODIUM_INGOT = ITEMS.register("rhodium_ingot", () -> new Item(new Item.Properties()));
     /**/ public static final RegistryObject<Item> CRYSTALLITE = ITEMS.register("crystallite", () -> new Item(new Item.Properties().rarity(Rarity.RARE)));
-
-    /* Items */
-    /**/ public static final RegistryObject<Item> PITAHAYA = ITEMS.register("pitahaya", () -> new PitahayaItem(new Item.Properties().food(BWFoodItemsConfig.PITAHAYA).stacksTo(16)));
-    /**/ public static final RegistryObject<Item> BAIKAL_WATER = ITEMS.register("baikal_water", () -> new BaikalWater(new Item.Properties().food(BWFoodItemsConfig.BAIKAL_WATER).stacksTo(1).rarity(BWRarity.MYTHIC)));
 
     /* Armor */
     /**/ public static final RegistryObject<Item> OVERLOUD_HELMET = ITEMS.register("overloud_helmet", () -> new ArmorItem(BWArmorMaterials.OVERLOUD, ArmorItem.Type.HELMET, new Item.Properties()));
     /**/ public static final RegistryObject<Item> OVERLOUD_CHESTPLATE = ITEMS.register("overloud_chestplate", () -> new ArmorItem(BWArmorMaterials.OVERLOUD, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
     /**/ public static final RegistryObject<Item> OVERLOUD_LEGGINGS = ITEMS.register("overloud_leggings", () -> new ArmorItem(BWArmorMaterials.OVERLOUD, ArmorItem.Type.LEGGINGS, new Item.Properties()));
     /**/ public static final RegistryObject<Item> OVERLOUD_BOOTS = ITEMS.register("overloud_boots", () -> new ArmorItem(BWArmorMaterials.OVERLOUD, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+    /* Infected items */
+    /**/ public static final RegistryObject<Item> INFECTED_FRAGMENT = ITEMS.register("infected_fragment", () -> new Item(new Item.Properties().rarity(BWRarity.VIRUS)));
+
+    /* Pitahaya tree items */
+    /**/ public static final RegistryObject<Item> PITAHAYA = ITEMS.register("pitahaya", () -> new PitahayaItem(new Item.Properties().food(BWFoodItemsConfig.PITAHAYA).stacksTo(16)));
+    ///**/ public static final RegistryObject<Item> PITAHAYA_TREE_BOAT = ITEMS.register("pitahaya_tree_boat", () -> new BoatItem(false, Boat.Type.DARK_OAK, (new Item.Properties().stacksTo(1))));
+    ///**/ public static final RegistryObject<Item> PITAHAYA_TREE_CHEST_BOAT = ITEMS.register("pitahaya_tree_chest_boat", () -> new BoatItem(true, Boat.Type.DARK_OAK, (new Item.Properties().stacksTo(1))));
 
     /* Tools */
     /**/ public static final RegistryObject<Item> OVERLOUD_SWORD = ITEMS.register("overloud_sword", () -> new SwordItem(BWToolsTiers.OVERLOUD, 8, -2.65F, new Item.Properties().durability(3999)));
@@ -45,6 +49,9 @@ public class BWItems {
     /**/ public static final RegistryObject<Item> NETHERITE_MULTITOOL = ITEMS.register("netherite_multitool", () -> new MultiToolItem(Tiers.NETHERITE, new Item.Properties().durability(2399)));
     /**/ public static final RegistryObject<Item> RHODIUM_MULTITOOL = ITEMS.register("rhodium_multitool", () -> new RhodiumMultitool(BWToolsTiers.RHODIUM, new Item.Properties().fireResistant().durability(2399)));
     /**/ public static final RegistryObject<Item> RHODIUM_SWORD = ITEMS.register("rhodium_sword", () -> new RhodiumSword(BWToolsTiers.RHODIUM, new Item.Properties().fireResistant().durability(3399)));
+
+    /* Other items */
+    /**/ public static final RegistryObject<Item> BAIKAL_WATER = ITEMS.register("baikal_water", () -> new BaikalWater(new Item.Properties().food(BWFoodItemsConfig.BAIKAL_WATER).stacksTo(1).rarity(BWRarity.MYTHIC)));
 
     public static void register(IEventBus eventBus) { ITEMS.register(eventBus); }
 

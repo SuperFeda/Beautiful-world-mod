@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/door_top_right_open",
+    "textures": {
+        "bottom": "beautifulworld:block/pitahaya_tree_door_down",
+        "top": "beautifulworld:block/pitahaya_tree_door_top"
+    },
+    "render_type": "minecraft:cutout"
+}

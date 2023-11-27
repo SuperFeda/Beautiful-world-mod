@@ -45,6 +45,9 @@ public class BWTabs {
                     output.accept(BWItems.CRYSTALLITE.get());
                     output.accept(BWItems.BAIKAL_WATER.get());
                     output.accept(BWItems.PITAHAYA.get());
+                    output.accept(BWItems.INFECTED_FRAGMENT.get());
+//                    output.accept(BWItems.PITAHAYA_TREE_BOAT.get());
+//                    output.accept(BWItems.PITAHAYA_TREE_CHEST_BOAT.get());
                 }));
     }
 
@@ -74,6 +77,8 @@ public class BWTabs {
                     output.accept(BWBlocks.PITAHAYA_TREE_FENCE_GATE.get());
                     output.accept(BWBlocks.PITAHAYA_TREE_PRESSURE_PLATE.get());
                     output.accept(BWBlocks.PITAHAYA_TREE_BUTTON.get());
+                    output.accept(BWBlocks.PITAHAYA_TREE_DOOR.get());
+                    output.accept(BWBlocks.PITAHAYA_TREE_TRAPDOOR.get());
                 }));
     }
 }

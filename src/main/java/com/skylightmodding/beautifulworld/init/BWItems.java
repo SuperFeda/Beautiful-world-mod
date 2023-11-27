@@ -11,6 +11,7 @@ import com.skylightmodding.beautifulworld.items.config.BWFoodItemsConfig;
 import com.skylightmodding.beautifulworld.items.config.BWToolsTiers;
 import com.skylightmodding.beautifulworld.items.type.MultiToolItem;
 
+import net.minecraft.world.entity.vehicle.Boat;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;

@@ -2,6 +2,7 @@ package com.skylightmodding.beautifulworld;
 
 import com.skylightmodding.beautifulworld.init.BWBlocks;
 import com.skylightmodding.beautifulworld.init.BWItems;
+import com.skylightmodding.beautifulworld.init.BWMobEffects;
 import com.skylightmodding.beautifulworld.loot.BWModifires;
 
 import com.mojang.logging.LogUtils;
@@ -14,6 +15,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+
 import org.slf4j.Logger;
 
 import java.util.Locale;
@@ -30,6 +32,7 @@ public class BeautifulWorld {
 
         BWItems.register(modEventBus);
         BWBlocks.register(modEventBus);
+        BWMobEffects.register(modEventBus);
         BWModifires.LOOT_MODIFIERS.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);

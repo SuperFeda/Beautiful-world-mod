@@ -1,5 +1,6 @@
 package com.skylightmodding.beautifulworld.items.custom;
 
+import com.skylightmodding.beautifulworld.init.BWMobEffects;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.InteractionHand;
@@ -22,17 +23,17 @@ public class BaikalWater extends Item {
     public ItemStack finishUsingItem(ItemStack stack, Level level, LivingEntity entity) {
         super.finishUsingItem(stack, level, entity);
 
-        if (entity != null) {
-//          if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide()) _entity.addEffect(new MobEffectInstance(BeautifulworldModMobEffects.EMUNITY.get(), 3000, 2));
-            entity.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 3000, 19));
-            entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 3000, 9));
-            entity.addEffect(new MobEffectInstance(MobEffects.JUMP, 3000, 2));
-            entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 3000, 2));
-            entity.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 3000, 2));
-            entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 3000, 2));
-            entity.addEffect(new MobEffectInstance(MobEffects.HERO_OF_THE_VILLAGE, 3000, 2));
-            entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 3000, 2));
-        }
+//        if (entity != null) {
+        entity.addEffect(new MobEffectInstance(BWMobEffects.IMMUNITY.get(), 3000, 2));
+        entity.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 3000, 19));
+        entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 3000, 9));
+        entity.addEffect(new MobEffectInstance(MobEffects.JUMP, 3000, 2));
+        entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 3000, 2));
+        entity.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 3000, 2));
+        entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 3000, 2));
+        entity.addEffect(new MobEffectInstance(MobEffects.HERO_OF_THE_VILLAGE, 3000, 2));
+        entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 3000, 2));
+//        }
 
         if (stack.isEmpty()) {
             return new ItemStack(Items.GLASS_BOTTLE);

@@ -2,17 +2,14 @@ package com.skylightmodding.beautifulworld.init;
 
 import com.skylightmodding.beautifulworld.BeautifulWorld;
 import com.skylightmodding.beautifulworld.blocks.custom.FruitfulPitahayaLeaves;
+import com.skylightmodding.beautifulworld.blocks.type.InfectedBlock;
 import com.skylightmodding.beautifulworld.blocks.type.ModFlammableRotatedPillarBlock;
 
-import com.skylightmodding.beautifulworld.items.BWRarity;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Tier;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.Material;
@@ -29,14 +26,14 @@ public class BWBlocks {
     /* Overloud blocks */
     /**/ public static final RegistryObject<Block> OVERLOUD_BLOCK = registerBlock("overloud_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK).requiresCorrectToolForDrops()));
     /**/ public static final RegistryObject<Block> RAW_OVERLOUD_BLOCK = registerBlock("raw_overloud_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK).requiresCorrectToolForDrops()));
-    /**/ public static final RegistryObject<Block> OVERLOUD_ORE = registerBlock("overloud_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.ANCIENT_DEBRIS).requiresCorrectToolForDrops(), UniformInt.of(3, 7)));
+    /**/ public static final RegistryObject<Block> OVERLOUD_ORE = registerBlock("overloud_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(30.0F,1311.1F).sound(SoundType.ANCIENT_DEBRIS).requiresCorrectToolForDrops(), UniformInt.of(3, 7)));
 
     /* Rhodium blocks */
     /**/ public static final RegistryObject<Block> RHODIUM_BLOCK = registerBlock("rhodium_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK).requiresCorrectToolForDrops()));
-    /**/ public static final RegistryObject<Block> RHODIUM_ORE = registerBlock("rhodium_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(30.0F, 1200.0F).sound(SoundType.ANCIENT_DEBRIS).requiresCorrectToolForDrops(), UniformInt.of(3, 7)));
+    /**/ public static final RegistryObject<Block> RHODIUM_ORE = registerBlock("rhodium_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(30.0F, 1200.0F).sound(SoundType.ANCIENT_DEBRIS).requiresCorrectToolForDrops(), UniformInt.of(3, 6)));
 
     /* Infected blocks */
-    /**/ public static final RegistryObject<Block> INFECTED_STONE = registerBlock("infected_stone", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.BASALT).strength(7f).requiresCorrectToolForDrops()));
+    /**/ public static final RegistryObject<Block> INFECTED_STONE = registerBlock("infected_stone", () -> new InfectedBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.BASALT).strength(7f).requiresCorrectToolForDrops()));
     /**/ //public static final RegistryObject<Block> INFECTED_COBBLESTONE = registerBlock("infected_cobblestone", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.BASALT).strength(7f).requiresCorrectToolForDrops()));
 
     /* Pitahaya tree blocks */
@@ -53,6 +50,8 @@ public class BWBlocks {
     /**/ public static final RegistryObject<Block> PITAHAYA_TREE_STAIRS = registerBlock("pitahaya_tree_stairs", () -> new StairBlock(() -> PITAHAYA_TREE_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS)));
     /**/ public static final RegistryObject<Block> PITAHAYA_TREE_FENCE = registerBlock("pitahaya_tree_fence", () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE)));
     /**/ public static final RegistryObject<Block> PITAHAYA_TREE_FENCE_GATE = registerBlock("pitahaya_tree_fence_gate", () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE), WoodType.OAK));
+    /**/ public static final RegistryObject<Block> PITAHAYA_TREE_DOOR = registerBlock("pitahaya_tree_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR), BlockSetType.OAK));
+    /**/ public static final RegistryObject<Block> PITAHAYA_TREE_TRAPDOOR = registerBlock("pitahaya_tree_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion()/*.isValidSpawn(BWBlocks::never)*/, BlockSetType.OAK));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

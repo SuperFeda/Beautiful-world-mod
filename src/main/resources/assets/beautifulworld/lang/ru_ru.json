@@ -38,6 +38,9 @@
     "block.beautifulworld.pitahaya_tree_fence": "Забор из Питахайного Дерева",
     "block.beautifulworld.pitahaya_tree_fence_gate": "Калитка из Питахайного Дерева",
 
+    "effect.beautifulworld.immunity": "Иммунитет",
+    "effect.beautifulworld.infection": "Заражение",
+
     "itemGroup.beautifulworld.items": "Beautiful World: Предметы",
     "itemGroup.beautifulworld.blocks": "Beautiful World: Блоки",
     "itemGroup.beautifulworld.equipment": "Beautiful World: Снаряжение"

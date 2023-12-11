@@ -21,7 +21,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class BWItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, BeautifulWorld.MODID);
 
-    /* Ore, other */
+    /* Ore and other */
     /**/ public static final RegistryObject<Item> OVERLOUD_INGOT = ITEMS.register("overloud_ingot", () -> new Item(new Item.Properties()));
     /**/ public static final RegistryObject<Item> RAW_OVERLOUD = ITEMS.register("raw_overloud", () -> new Item(new Item.Properties()));
     /**/ public static final RegistryObject<Item> RHODIUM_INGOT = ITEMS.register("rhodium_ingot", () -> new Item(new Item.Properties()));

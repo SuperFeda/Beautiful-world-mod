@@ -34,7 +34,10 @@ public class BWBlocks {
 
     /* Infected blocks */
     /**/ public static final RegistryObject<Block> INFECTED_STONE = registerBlock("infected_stone", () -> new InfectedBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.BASALT).strength(7f).requiresCorrectToolForDrops()));
-    /**/ //public static final RegistryObject<Block> INFECTED_COBBLESTONE = registerBlock("infected_cobblestone", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.BASALT).strength(7f).requiresCorrectToolForDrops()));
+    /**/ public static final RegistryObject<Block> INFECTED_COBBLESTONE = registerBlock("infected_cobblestone", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.BASALT).strength(7f).requiresCorrectToolForDrops()));
+    /**/ public static final RegistryObject<Block> INFECTED_CLAY = registerBlock("infected_clay", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.BASALT).strength(7f).requiresCorrectToolForDrops()));
+    /**/ public static final RegistryObject<Block> INFECTED_DIRT = registerBlock("infected_dirt", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.BASALT).strength(7f).requiresCorrectToolForDrops()));
+    /**/ public static final RegistryObject<Block> INFECTED_SAND = registerBlock("infected_sand", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.BASALT).strength(7f).requiresCorrectToolForDrops()));
 
     /* Pitahaya tree blocks */
     /**/ public static final RegistryObject<Block> PITAHAYA_LEAVES = registerBlock("pitahaya_leaves", () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).sound(SoundType.AZALEA_LEAVES)));

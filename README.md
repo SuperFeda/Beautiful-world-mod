@@ -1,4 +1,5 @@
-![](https://cdn.discordapp.com/attachments/968157912843288606/1244144793278349343/beautiful_world.png?ex=66540ba1&is=6652ba21&hm=21c5957347d8c6e9ea9402930ad2ba51f97dd843bd22c7f7d14152386cbced0a&)
+![image](https://github.com/SuperFeda/Beautiful-world-mod/assets/112332753/8185eeec-f88f-4640-87e4-cdbc7b86d856)
+
 
 ---
 

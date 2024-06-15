@@ -13,6 +13,7 @@ import com.skylightmodding.beautifulworld.items.type.MultiToolItem;
 
 import net.minecraft.world.entity.vehicle.Boat;
 import net.minecraft.world.item.*;
+import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -42,7 +43,7 @@ public class BWItems {
     ///**/ public static final RegistryObject<Item> PITAHAYA_TREE_CHEST_BOAT = ITEMS.register("pitahaya_tree_chest_boat", () -> new BoatItem(true, Boat.Type.DARK_OAK, (new Item.Properties().stacksTo(1))));
 
     /* Tools */
-    /**/ public static final RegistryObject<Item> OVERLOUD_SWORD = ITEMS.register("overloud_sword", () -> new SwordItem(BWToolsTiers.OVERLOUD, 8, -2.65F, new Item.Properties().durability(3999)));
+    /**/ public static final RegistryObject<Item> OVERLOUD_SWORD = ITEMS.register("overloud_sword", () -> new SwordItem(BWToolsTiers.OVERLOUD, 8, -2.30F, new Item.Properties().durability(3999)));
     /**/ public static final RegistryObject<Item> OVERLOUD_PICKAXE = ITEMS.register("overloud_pickaxe", () -> new PickaxeItem(BWToolsTiers.OVERLOUD, 2, -3F, new Item.Properties().durability(3499)));
     /**/ public static final RegistryObject<Item> OVERLOUD_AXE = ITEMS.register("overloud_axe", () -> new AxeItem(BWToolsTiers.OVERLOUD, 11, -3.3F, new Item.Properties().durability(3299)));
     /**/ public static final RegistryObject<Item> OVERLOUD_HOE = ITEMS.register("overloud_hoe", () -> new HoeItem(BWToolsTiers.OVERLOUD, 1, -3F, new Item.Properties().durability(3299)));
@@ -54,6 +55,12 @@ public class BWItems {
     /* Other items */
     /**/ public static final RegistryObject<Item> BAIKAL_WATER = ITEMS.register("baikal_water", () -> new BaikalWater(new Item.Properties().food(BWFoodItemsConfig.BAIKAL_WATER).stacksTo(1).rarity(BWRarity.MYTHIC)));
 
-    public static void register(IEventBus eventBus) { ITEMS.register(eventBus); }
+    /* Infected BlockItems */
+    /**/ public static final RegistryObject<Item> INFECTED_STONE = ITEMS.register("infected_stone", () -> new BlockItem(BWBlocks.INFECTED_STONE.get(), new Item.Properties().rarity(BWRarity.VIRUS)));
+    /**/ public static final RegistryObject<Item> INFECTED_COBBLESTONE = ITEMS.register("infected_cobblestone", () -> new BlockItem(BWBlocks.INFECTED_COBBLESTONE.get(), new Item.Properties().rarity(BWRarity.VIRUS)));
+    /**/ public static final RegistryObject<Item> INFECTED_CLAY = ITEMS.register("infected_clay", () -> new BlockItem(BWBlocks.INFECTED_CLAY.get(), new Item.Properties().rarity(BWRarity.VIRUS)));
+    /**/ public static final RegistryObject<Item> INFECTED_DIRT = ITEMS.register("infected_dirt", () -> new BlockItem(BWBlocks.INFECTED_DIRT.get(), new Item.Properties().rarity(BWRarity.VIRUS)));
+    /**/ public static final RegistryObject<Item> INFECTED_SAND = ITEMS.register("infected_sand", () -> new BlockItem(BWBlocks.INFECTED_SAND.get(), new Item.Properties().rarity(BWRarity.VIRUS)));
 
+    public static void register(IEventBus eventBus) { ITEMS.register(eventBus); }
 }

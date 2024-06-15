@@ -8,7 +8,7 @@ import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.enchantment.Enchantments;
 
 public class RhodiumSword extends SwordItem {
-    public RhodiumSword(Tier tier, Item.Properties properties) { super(tier,6,-2.65F, properties); }
+    public RhodiumSword(Tier tier, Item.Properties properties) { super(tier,6,-2.30F, properties); }
 
     @Override
     public boolean canApplyAtEnchantingTable(ItemStack stack, Enchantment enchantment) {

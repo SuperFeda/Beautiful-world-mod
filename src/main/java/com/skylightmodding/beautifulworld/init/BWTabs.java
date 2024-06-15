@@ -57,11 +57,11 @@ public class BWTabs {
                 .title(Component.translatable("itemGroup.beautifulworld.blocks"))
                 .icon(() -> new ItemStack(BWBlocks.INFECTED_STONE.get()))
                 .displayItems((parameters, output) -> {
-                    output.accept(BWBlocks.INFECTED_STONE.get());
-                    output.accept(BWBlocks.INFECTED_COBBLESTONE.get());
-                    output.accept(BWBlocks.INFECTED_SAND.get());
-                    output.accept(BWBlocks.INFECTED_CLAY.get());
-                    output.accept(BWBlocks.INFECTED_DIRT.get());
+                    output.accept(BWItems.INFECTED_STONE.get());
+                    output.accept(BWItems.INFECTED_COBBLESTONE.get());
+                    output.accept(BWItems.INFECTED_SAND.get());
+                    output.accept(BWItems.INFECTED_CLAY.get());
+                    output.accept(BWItems.INFECTED_DIRT.get());
                     output.accept(BWBlocks.OVERLOUD_BLOCK.get());
                     output.accept(BWBlocks.RAW_OVERLOUD_BLOCK.get());
                     output.accept(BWBlocks.OVERLOUD_ORE.get());

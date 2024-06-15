@@ -12,7 +12,6 @@ import net.minecraft.world.level.block.Block;
 public class BWTags {
     public static final TagKey<Block> NEEDS_OVERLOUD_TOOL = createBlockTag("needs_overloud_tool");
 
-
     private static TagKey<Block> createBlockTag(String name) { return BlockTags.create(new ResourceLocation(BeautifulWorld.MODID, name)); }
     private static TagKey<Block> createBlockForgeTag(String name) { return BlockTags.create(new ResourceLocation("forge", name)); }
 

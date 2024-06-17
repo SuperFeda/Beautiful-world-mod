@@ -4,6 +4,7 @@
     "item.beautifulworld.rhodium_ingot": "Rhodium Ingot",
     "item.beautifulworld.crystallite": "Crystallite",
     "item.beautifulworld.baikal_water": "Baikal Water",
+    "item.beautifulworld.infected_fragment": "Infected Fragment",
 
     "item.beautifulworld.overloud_sword": "Overloud Sword",
     "item.beautifulworld.overloud_pickaxe": "Overloud Pickaxe",
@@ -28,6 +29,10 @@
     "block.beautifulworld.rhodium_block": "Rhodium Block",
     "block.beautifulworld.rhodium_ore": "Rhodium Ore",
     "block.beautifulworld.infected_stone": "Infected Stone",
+    "block.beautifulworld.infected_cobblestone": "Infected Cobblestone",
+    "block.beautifulworld.infected_clay": "Infected Clay",
+    "block.beautifulworld.infected_dirt": "Infected Dirt",
+    "block.beautifulworld.infected_sand": "Infected Sand",
     "block.beautifulworld.pitahaya_leaves": "Pitahaya Leaves",
     "block.beautifulworld.fruitful_pitahaya_leaves": "Pitahaya Fetus Leaves",
     "block.beautifulworld.pitahaya_log": "Pitahaya Log",
@@ -39,6 +44,13 @@
     "block.beautifulworld.pitahaya_tree_pressure_plate": "Pitahaya Pressure Plate",
     "block.beautifulworld.pitahaya_tree_fence": "Pitahaya Fence",
     "block.beautifulworld.pitahaya_tree_fence_gate": "Pitahaya Fence Gate",
+    "block.beautifulworld.pitahaya_tree_slab": "Pitahaya Slab",
+    "block.beautifulworld.pitahaya_tree_stairs": "Pitahaya Stairs",
+    "block.beautifulworld.pitahaya_tree_trapdoor": "Pitahaya Trapdoor",
+    "block.beautifulworld.pitahaya_tree_door": "Pitahaya Door",
+
+    "effect.beautifulworld.immunity": "Immunity",
+    "effect.beautifulworld.infection": "Infection",
 
     "itemGroup.beautifulworld.items": "Beautiful World: Items",
     "itemGroup.beautifulworld.blocks": "Beautiful World: Block",

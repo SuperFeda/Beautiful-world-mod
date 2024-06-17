@@ -1,14 +1,14 @@
 package com.skylightmodding.beautifulworld.init;
 
 import com.skylightmodding.beautifulworld.BeautifulWorld;
-import com.skylightmodding.beautifulworld.blocks.custom.FruitfulPitahayaLeaves;
-import com.skylightmodding.beautifulworld.blocks.type.InfectedBlock;
-import com.skylightmodding.beautifulworld.blocks.type.ModFlammableRotatedPillarBlock;
+import com.skylightmodding.beautifulworld.blocks.FruitfulPitahayaLeaves;
+import com.skylightmodding.beautifulworld.blocks.infected.InfectedBlock;
+import com.skylightmodding.beautifulworld.blocks.infected.InfectedFallingBlock;
+import com.skylightmodding.beautifulworld.blocks.extra.ModFlammableRotatedPillarBlock;
 
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Rarity;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
@@ -36,10 +36,10 @@ public class BWBlocks {
 
     /* Infected blocks */
     /**/ public static final RegistryObject<Block> INFECTED_STONE = BLOCKS.register("infected_stone", () -> new InfectedBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.BASALT).strength(7f).requiresCorrectToolForDrops()));
-    /**/ public static final RegistryObject<Block> INFECTED_COBBLESTONE = BLOCKS.register("infected_cobblestone", () -> new InfectedBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.BASALT).strength(7f).requiresCorrectToolForDrops()));
-    /**/ public static final RegistryObject<Block> INFECTED_CLAY = BLOCKS.register("infected_clay", () -> new InfectedBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.BASALT).strength(7f).requiresCorrectToolForDrops()));
-    /**/ public static final RegistryObject<Block> INFECTED_DIRT = BLOCKS.register("infected_dirt", () -> new InfectedBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.BASALT).strength(7f).requiresCorrectToolForDrops()));
-    /**/ public static final RegistryObject<Block> INFECTED_SAND = BLOCKS.register("infected_sand", () -> new InfectedBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.BASALT).strength(7f).requiresCorrectToolForDrops()));
+    /**/ public static final RegistryObject<Block> INFECTED_COBBLESTONE = BLOCKS.register("infected_cobblestone", () -> new InfectedBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.BASALT).strength(9.3f).requiresCorrectToolForDrops()));
+    /**/ public static final RegistryObject<Block> INFECTED_CLAY = BLOCKS.register("infected_clay", () -> new InfectedBlock(BlockBehaviour.Properties.of(Material.CLAY).sound(SoundType.BASALT).strength(2.8f).requiresCorrectToolForDrops()));
+    /**/ public static final RegistryObject<Block> INFECTED_DIRT = BLOCKS.register("infected_dirt", () -> new InfectedBlock(BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.BASALT).strength(2.3f).requiresCorrectToolForDrops()));
+    /**/ public static final RegistryObject<Block> INFECTED_SAND = BLOCKS.register("infected_sand", () -> new InfectedFallingBlock(BlockBehaviour.Properties.of(Material.SAND).sound(SoundType.BASALT).strength(2.8f).requiresCorrectToolForDrops()));
 
     /* Pitahaya tree blocks */
     /**/ public static final RegistryObject<Block> PITAHAYA_LEAVES = registerBlock("pitahaya_leaves", () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).sound(SoundType.AZALEA_LEAVES)));

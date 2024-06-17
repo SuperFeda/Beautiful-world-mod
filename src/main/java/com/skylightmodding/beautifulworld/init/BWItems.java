@@ -1,19 +1,17 @@
 package com.skylightmodding.beautifulworld.init;
 
 import com.skylightmodding.beautifulworld.BeautifulWorld;
-import com.skylightmodding.beautifulworld.items.BWRarity;
-import com.skylightmodding.beautifulworld.items.custom.BaikalWater;
-import com.skylightmodding.beautifulworld.items.custom.PitahayaItem;
-import com.skylightmodding.beautifulworld.items.custom.RhodiumMultitool;
-import com.skylightmodding.beautifulworld.items.custom.RhodiumSword;
+import com.skylightmodding.beautifulworld.items.extra.BWRarity;
+import com.skylightmodding.beautifulworld.items.BaikalWater;
+import com.skylightmodding.beautifulworld.items.PitahayaItem;
+import com.skylightmodding.beautifulworld.items.RhodiumMultitool;
+import com.skylightmodding.beautifulworld.items.RhodiumSword;
 import com.skylightmodding.beautifulworld.items.config.BWArmorMaterials;
 import com.skylightmodding.beautifulworld.items.config.BWFoodItemsConfig;
 import com.skylightmodding.beautifulworld.items.config.BWToolsTiers;
-import com.skylightmodding.beautifulworld.items.type.MultiToolItem;
+import com.skylightmodding.beautifulworld.items.extra.MultiToolItem;
 
-import net.minecraft.world.entity.vehicle.Boat;
 import net.minecraft.world.item.*;
-import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;

@@ -4,8 +4,29 @@
 ---
 
 ## Лор Beautiful world
-Сюжет происходит во Вселенной (да, наша вселенная называется "Вселенная"), в 39 световых годах от некогда процветающей системы планет "Солнечная система", на планете TRAPPIST-1 f находящиеся в самом центре обитаемой зоны TRAPPIST-1. После того как была уничтожена цивилизация "Люди" и вместе с ней их родная планета "Земля".
 
-Это истребление заметило одно божество, оно приняло решение закрыть все планеты, которые только существуют во Вселенной черной субстанцией, что не видно с поверхности планеты, поэтому звездное небо продолжает появляться в ночное время суток, но видно со стороны космоса, по этой причине понять: есть ли на этой планете хоть что-то - будет сложно.
+<details>
+<summary>RU: Лор мода</summary>
 
-Однажды на TRAPPIST-1 f произошла атака в лице того, кто уничтожил Землю. `/* (атака была не только на эту планету) */` Он открыл огненные врата между атмосферой планеты и космосом, начал выдирать землю кусками и переносить всю землю в новый мир. Параллельно с этим на поверхность f упало несколько капель той черной жижи - этот момент обернется еще одним вымиранием... И во время выдергивания каждого куска, образовывались небольшие базальтовые наросты с лавой.
+Сюжет мода разворачивается в нашей Вселенной. Точнее, в зоне обитания TRAPPIST 1 на планете с похожим названием TRAPPIST 1-f. К тому времени человечества уже не существовало, и Земля, как и многие другие планеты, стала безжизненной.
+
+Один "Творец" заметил это и решил покрыть все планеты во Вселенной черной субстанцией, невидимой с земли и видимой из космоса. 
+
+Но силы зла, а именно те, кто разрушил Землю, напали на TRAPPIST 1-f. Они открыли огненные врата в небе и разорвали планету на куски. Но несколько капель черной субстанции проникли в атмосферу, и теперь это обернется катастрофой...
+
+Пришло ваше время. Вы должны предотвратить катастрофу, или, если хотите, инфекция может распространиться по всему миру!
+
+</details>
+
+<details>
+<summary>EN: Hisotry of the mod</summary>
+
+The plot of the mod takes place in our Universe. More precisely in habitabal zone TRAPPIST 1 on planet with similar name TRAPPIST 1-f. By the time humanility has no longer exists, and Earth as many other planets became lifeless.
+
+One "Creator" had noticed it, and decided to cover every planet in the Universe with black substance, that is invisible from the ground and visible from a space. 
+
+But forces of evil namely those, who had destracted the Earth, has attacked TRAPPIST 1-f. They opened fire gates in a sky and torn up pieces of planet through gates. But some drops of black substance has penetrated under atmosphere, now it will turn into a disaster...
+
+It's time for you now. You should prevent disaster or if you wish, infection could spread all over the world!
+
+</details>

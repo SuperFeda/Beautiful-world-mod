@@ -19,7 +19,7 @@
 </details>
 
 <details>
-<summary>EN: Hisotry of the mod</summary>
+<summary>EN: History of the mod</summary>
 
 The plot of the mod takes place in our Universe. More precisely in habitabal zone TRAPPIST 1 on planet with similar name TRAPPIST 1-f. By the time humanility has no longer exists, and Earth as many other planets became lifeless.
 

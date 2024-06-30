@@ -19,14 +19,18 @@
 </details>
 
 <details>
+<<<<<<< Updated upstream
 <summary>EN: History of the mod</summary>
+=======
+<summary>EN: Mod Lore</summary>
+>>>>>>> Stashed changes
 
 The plot of the mod takes place in our Universe. More precisely in habitabal zone TRAPPIST 1 on planet with similar name TRAPPIST 1-f. By the time humanility has no longer exists, and Earth as many other planets became lifeless.
 
 One "Creator" had noticed it, and decided to cover every planet in the Universe with black substance, that is invisible from the ground and visible from a space. 
 
-But forces of evil namely those, who had destracted the Earth, has attacked TRAPPIST 1-f. They opened fire gates in a sky and torn up pieces of planet through gates. But some drops of black substance has penetrated under atmosphere, now it will turn into a disaster...
+But forces of evil namely those, who had devastated the Earth, has attacked TRAPPIST 1-f. They opened fire gates into the sky and snatched pieces of planet through gates. But a few drops of black substance has penetrated under atmosphere, now it will turn into a disaster...
 
-It's time for you now. You should prevent disaster or if you wish, infection could spread all over the world!
+It's time for you now. You should prevent disaster or if you wish, help infection spread all over the world!
 
 </details>

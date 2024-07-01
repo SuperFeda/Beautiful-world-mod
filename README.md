@@ -19,11 +19,7 @@
 </details>
 
 <details>
-<<<<<<< Updated upstream
-<summary>EN: History of the mod</summary>
-=======
 <summary>EN: Mod Lore</summary>
->>>>>>> Stashed changes
 
 The plot of the mod takes place in our Universe. More precisely in habitabal zone TRAPPIST 1 on planet with similar name TRAPPIST 1-f. By the time humanility has no longer exists, and Earth as many other planets became lifeless.
 

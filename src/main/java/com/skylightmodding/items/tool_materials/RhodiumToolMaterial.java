@@ -1,23 +1,24 @@
-package com.skylightmodding.misc;
+package com.skylightmodding.items.tool_materials;
 
 import com.skylightmodding.init.BWItems;
+
 import net.minecraft.block.Block;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.TagKey;
 
-public class OverloudToolMaterial implements ToolMaterial {
-    public static final OverloudToolMaterial INSTANCE = new OverloudToolMaterial();
+public class RhodiumToolMaterial implements ToolMaterial {
+    public static final RhodiumToolMaterial INSTANCE = new RhodiumToolMaterial();
 
     @Override
     public int getDurability() {
-        return 2314;
+        return 1783;
     }
 
     @Override
     public float getMiningSpeedMultiplier() {
-        return 20.0f;
+        return 8.0f;
     }
 
     @Override
@@ -27,7 +28,7 @@ public class OverloudToolMaterial implements ToolMaterial {
 
     @Override
     public int getEnchantability() {
-        return 18;
+        return 16;
     }
 
     @Override
@@ -37,6 +38,6 @@ public class OverloudToolMaterial implements ToolMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(BWItems.OVERLOUD_INGOT);
+        return Ingredient.ofItems(BWItems.RHODIUM_INGOT);
     }
 }

@@ -5,13 +5,21 @@ import com.skylightmodding.blocks.FallingInfectedBlock;
 import com.skylightmodding.blocks.InfectedBlock;
 
 import net.minecraft.block.*;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
+import net.minecraft.util.ActionResult;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
+import net.minecraft.util.hit.BlockHitResult;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 
 public class BWBlocks {
 
@@ -130,8 +138,18 @@ public class BWBlocks {
             new LeavesBlock(Block.Settings.copy(Blocks.OAK_LEAVES))
     );
     public static final BlockItem FRUITFUL_PITAHAYA_TREE_LEAVES = registerBlockItem(
-            "fruitful_pitahaya_leaves",
-            new LeavesBlock(Block.Settings.copy(Blocks.OAK_LEAVES))
+        "fruitful_pitahaya_leaves",
+        new LeavesBlock(Block.Settings.copy(Blocks.OAK_LEAVES)) {
+            @Override
+            public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
+                // TODO: сделать рандомное кол-во выпадающей питахайи. Вроде сделал ;)
+                dropStack(world, pos, new ItemStack(BWItems.PITAHAYA, world.random.nextBetween(1, 2)));
+                world.playSound(player, pos, SoundEvents.BLOCK_CAVE_VINES_PICK_BERRIES, SoundCategory.BLOCKS, 1.0F, 0.8F + world.random.nextFloat() * 0.4F);
+                world.setBlockState(pos, PITAHAYA_TREE_LEAVES.getBlock().getDefaultState(), 2);
+
+                return ActionResult.success(world.isClient);
+            }
+        }
     );
 
 

@@ -17,13 +17,6 @@ public class BWItemGroups {
                 entries.add(BWItems.RAW_OVERLOUD);
                 entries.add(BWItems.KORG_FRAGMENT);
                 entries.add(BWItems.BAIKAL_WATER);
-                entries.add(BWItems.OVERLOUD_SWORD);
-                entries.add(BWItems.OVERLOUD_PICKAXE);
-                entries.add(BWItems.OVERLOUD_AXE);
-                entries.add(BWItems.OVERLOUD_SHOVEL);
-                entries.add(BWItems.OVERLOUD_HOE);
-                entries.add(BWItems.RHODIUM_SWORD);
-                entries.add(BWItems.NETHERITE_MULTI_TOOL);
                 entries.add(BWItems.PITAHAYA);
             })
             .build();
@@ -63,10 +56,16 @@ public class BWItemGroups {
 
 
     public static final ItemGroup EQUIPMENT_TAB = FabricItemGroup.builder()
-            .icon(() -> new ItemStack(BWItems.CRYSTALLITE))
+            .icon(() -> new ItemStack(BWItems.RHODIUM_SWORD))
             .displayName(Text.translatable("itemGroup.beautifulworld.equipment"))
             .entries((context, entries) -> {
-                entries.add(BWItems.CRYSTALLITE);
+                entries.add(BWItems.OVERLOUD_SWORD);
+                entries.add(BWItems.OVERLOUD_PICKAXE);
+                entries.add(BWItems.OVERLOUD_AXE);
+                entries.add(BWItems.OVERLOUD_SHOVEL);
+                entries.add(BWItems.OVERLOUD_HOE);
+                entries.add(BWItems.RHODIUM_SWORD);
+                entries.add(BWItems.NETHERITE_MULTI_TOOL);
             })
             .build();
 }

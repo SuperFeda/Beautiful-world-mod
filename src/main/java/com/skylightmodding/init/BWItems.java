@@ -3,19 +3,22 @@ package com.skylightmodding.init;
 import com.skylightmodding.BeautifulWorld;
 import com.skylightmodding.items.BaikalWaterItem;
 import com.skylightmodding.items.NetheriteMultiTool;
-import com.skylightmodding.items.PitahayaItem;
-import com.skylightmodding.items.RhodiumSword;
-import com.skylightmodding.misc.OverloudToolMaterial;
+import com.skylightmodding.items.tool_materials.OverloudToolMaterial;
+import com.skylightmodding.items.tool_materials.RhodiumToolMaterial;
 
 import net.minecraft.client.item.TooltipType;
 import net.minecraft.component.type.FoodComponent;
-import net.minecraft.entity.effect.StatusEffect;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
+import net.minecraft.world.World;
 
 import java.util.List;
 
@@ -27,7 +30,7 @@ public class BWItems {
     public static final Item RHODIUM_INGOT = registerItem("rhodium_ingot", new Item(new Item.Settings().fireproof()));
 
     // Korg Items
-    public static final Item KORG_FRAGMENT = registerItem("korg_fragment", new Item(new Item.Settings()));
+    public static final Item KORG_FRAGMENT = registerItem("korg_fragment", new Item(new Item.Settings().rarity(Rarity.EPIC)));
 
     // overloud items
 //    public static final Item OVERLOUD_HELMET = registerItem(
@@ -57,9 +60,18 @@ public class BWItems {
 
     // rhodium
     public static final Item RHODIUM_SWORD = registerItem(
-            "rhodium_sword",
-            new RhodiumSword(ToolMaterials.NETHERITE, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(OverloudToolMaterial.INSTANCE, 5, -2.4F)))
-            // TODO: добавить RhodiumToolMaterial
+        "rhodium_sword",
+        new SwordItem(RhodiumToolMaterial.INSTANCE, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(RhodiumToolMaterial.INSTANCE, 5, -2.4F))) {
+            @Override
+            public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
+                if (!target.isFireImmune()) {
+                    target.setOnFireFor(5);
+                }
+                stack.damage(1, attacker, EquipmentSlot.MAINHAND);
+
+                return true;
+            }
+        }
     );
 
     // other
@@ -68,20 +80,28 @@ public class BWItems {
             new NetheriteMultiTool(ToolMaterials.NETHERITE, new Item.Settings())
     );
     public static final Item PITAHAYA = registerItem(
-            "pitahaya",
-            new PitahayaItem(new Item.Settings().food(new FoodComponent(5, 4.5f, true, 1.6f, List.of())))
+        "pitahaya",
+        new Item(new Item.Settings().food(new FoodComponent(5, 4.5f, true, 1.6f, List.of()))) {
+            @Override
+            public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
+                user.addStatusEffect(new StatusEffectInstance(BWStatusEffects.IMMUNITY, 2400, 0));
+                if (user.hasStatusEffect(BWStatusEffects.INFECTION)) { user.removeStatusEffect(BWStatusEffects.INFECTION); }
+
+                return super.finishUsing(stack, world, user);
+            }
+        }
     );
     public static final Item BAIKAL_WATER = registerItem(
-            "baikal_water",
-            new BaikalWaterItem(new Item.Settings()) {
-                @Override
-                public void appendTooltip(ItemStack itemStack, Item.TooltipContext context, List<Text> tooltip, TooltipType options) {
-                    tooltip.add(Text.translatable("tooltip.beautifulworld.baikal_water").formatted(Formatting.GRAY));
-                }
+        "baikal_water",
+        new BaikalWaterItem(new Item.Settings()) {
+            @Override
+            public void appendTooltip(ItemStack itemStack, Item.TooltipContext context, List<Text> tooltip, TooltipType options) {
+                tooltip.add(Text.translatable("tooltip.beautifulworld.baikal_water").formatted(Formatting.GRAY));
             }
+        }
     );
 
-    // ctrl+c ctrl+v from https://github.com/Pandarix/BetterArcheology/blob/1.20/src/main/java/net/Pandarix/betterarcheology/item/ModItems.java
+    
     public static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(BeautifulWorld.MOD_ID, name), item);
     }
